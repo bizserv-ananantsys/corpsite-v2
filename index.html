@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ananant Systems — Deterministic compute and connectivity for the industrial edge</title>
+<meta name="description" content="Deterministic compute and connectivity for machines, networks and floors — engineered where power, latency and cost decide whether a system can be built at all.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ananantsys.com/">
+<meta property="og:title" content="Ananant Systems — Deterministic compute and connectivity for the industrial edge">
+<meta property="og:description" content="Deterministic compute and connectivity for machines, networks and floors — engineered where power, latency and cost decide whether a system can be built at all.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ananantsys.com/">
+<meta property="og:site_name" content="Ananant Systems">
+<meta property="og:image" content="https://ananantsys.com/assets/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#232321">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="80x80" href="assets/favicon-80.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/space-grotesk-latin-700-normal.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-latin-400-normal.woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="/" aria-label="Ananant Systems &mdash; home"><img src="assets/logo-wordmark.png" alt="Ananant Systems" width="320" height="74"></a>
+    <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navmenu">&#9776;</button>
+    <ul id="navmenu">
+      <li><a class="nl" href="/products">Products</a></li>
+      <li><a class="nl" href="/use-cases">Use Cases</a></li>
+      <li><a class="nl" href="/company">Company</a></li>
+      <li><a class="cta-mini" href="/company#contact">Talk to us</a></li>
+    </ul>
+  </div>
+</header>
+<main id="main">
+<section class="chapter hero">
+  <svg class="arcfield" viewBox="0 0 700 700" aria-hidden="true" focusable="false" preserveAspectRatio="xMaxYMin meet">
+  <path class="g" stroke-width="34" d="M 700 640 A 610 610 0 0 0 90 30"/>
+  <path class="g" stroke-width="30" d="M 700 500 A 470 470 0 0 0 230 30"/>
+  <path class="s" stroke-width="16" d="M 700 372 A 342 342 0 0 0 358 30" opacity=".9"/>
+  <path class="g" stroke-width="24" d="M 700 260 A 230 230 0 0 0 470 30"/>
+  <path class="g" stroke-width="18" d="M 700 168 A 138 138 0 0 0 562 30"/>
+</svg>
+  <div class="wrap">
+    <p class="hero-tags"><b>ANANANT SYSTEMS</b> &nbsp;/&nbsp; DETERMINISTIC &middot; RISC-V &middot; DSP &middot; 5G &middot; 6G &middot; SMALL CELL &middot; EDGE-AI</p>
+    <h1>Deterministic compute<br>and connectivity for<br>machines, networks, floors.</h1>
+    <p class="lede">Silicon for applications where power, latency and cost are the limiting constraints. Connectivity products are in production; perception products follow on the same architecture.</p>
+    <div class="btns">
+      <a class="btn solid" href="/products">Products</a>
+      <a class="btn ghost" href="/use-cases">Applications</a>
+    </div>
+  </div>
+  <div class="scrollcue" aria-hidden="true">Scroll</div>
+</section>
+
+<section class="chapter">
+  <div class="wrap">
+    <p class="kicker rv"><span class="n">01</span>The problem</p>
+    <h2 class="rv">Four constraints that apply at the same time.</h2>
+    <p class="lede rv">Industrial edge systems &mdash; a machine on a factory floor, a small cell on a pole, a camera on a mobile robot &mdash; operate under all four of the following simultaneously. Most processors are designed to satisfy three.</p>
+    <div class="quad rv">
+      <div><h3><span class="qn">P1</span>Performance</h3><p>Real-time signal processing and AI inference on live sensor streams, concurrently rather than in sequence.</p></div>
+      <div><h3><span class="qn">P2</span>Power</h3><p>Milliwatts at the sensor, single-digit watts at the node. No active cooling and often no mains supply.</p></div>
+      <div><h3><span class="qn">P3</span>Programmability</h3><p>Standards and models change during a deployment&rsquo;s service life. Fixed-function silicon cannot follow them.</p></div>
+      <div><h3><span class="qn">P4</span>Determinism</h3><p>A bounded, repeatable response time. Control loops and safety functions cannot tolerate variable latency.</p></div>
+    </div>
+    <p class="lede rv">General-purpose processors trade these against each other. Fixed-function accelerators introduce timing variance at the hand-off. Multi-chip platforms carry the cost of each boundary in power, latency and bill of materials.</p>
+  </div>
+</section>
+
+<section class="chapter warm">
+  <div class="wrap">
+    <p class="kicker rv"><span class="n">02</span>Our approach</p>
+    <h2 class="rv">Why we work on this.</h2>
+    <div class="reasons rv">
+      <div class="reason">
+        <span class="rn">01</span>
+        <h3>Connectivity and perception share the same mathematics</h3>
+        <p>MIMO demodulation and vision pipelines are both dense linear algebra on streaming data under a deadline. Transforms, matrix multiplies and nonlinear activations are common to both, so one datapath can serve both without compromise.</p>
+      </div>
+      <div class="reason">
+        <span class="rn">02</span>
+        <h3>Existing roadmaps target other sockets</h3>
+        <p>The largest processor roadmaps are optimised for data centre and handset workloads, where the constraints and volumes differ. Industrial edge designs are typically served by parts adapted from those markets.</p>
+      </div>
+      <div class="reason">
+        <span class="rn">03</span>
+        <h3>The team has built this class of silicon</h3>
+        <p>Our founding team spent two decades architecting modem platforms shipped in over four billion devices, with no re-spin in any generation the CTO architected.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chapter">
+  <div class="wrap">
+    <p class="kicker rv"><span class="n">03</span>What we build</p>
+    <h2 class="rv">One architecture, two products.</h2>
+    <p class="lede rv">We design our own DSP. Connectivity, perception, the systems and the software platform are all composed from that one compute unit, so software written for the first generation runs on the third.</p>
+    <div class="threec rv">
+      <div class="c"><b>compute</b><span>Our DSP and edge-AI inference on one datapath and one toolchain.</span></div>
+      <div class="c"><b>connect</b><span>Deterministic 5G connectivity from the same silicon architecture.</span></div>
+      <div class="c"><b>cognize</b><span>Perception with a bounded response time, at camera-class cost and power.</span></div>
+    </div>
+    <div class="statline rv">
+      <div class="s sig"><b>&gt;2&times;</b><span>THROUGHPUT VS INCUMBENT DSP</span></div>
+      <div class="s"><b>&#8531; &middot; &#8531;</b><span>POWER &middot; COST</span></div>
+      <div class="s"><b>&gt;50%</b><span>LOWER SYSTEM POWER VS MULTI-CHIP PLATFORMS</span></div>
+    </div>
+    <div class="btns mt-38">
+      <a class="btn solid" href="/products">Technical detail</a>
+      <a class="btn ghost" href="/use-cases">Applications by industry</a>
+    </div>
+  </div>
+</section>
+
+<section class="chapter dark">
+  <div class="wrap">
+    <p class="kicker rv"><span class="n">04</span>Roadmap</p>
+    <h2 class="rv">Product journey.</h2>
+    <p class="lede rv">Completed milestones, work in progress, and committed dates.</p>
+    <div class="ledger">
+      <div class="lrow done"><span class="st done">&#10003;</span><span class="what">Gen&nbsp;1 &middot; FPGA validation, integrated with commercial L2/L3 stacks</span><span class="when">2023&ndash;25</span></div>
+      <div class="lrow done"><span class="st done">&#10003;</span><span class="what">Gen&nbsp;1 &middot; v1 silicon in production</span><span class="when">2026</span></div>
+      <div class="lrow"><span class="st prog">&#9679;</span><span class="what">Gen&nbsp;1 &middot; v2 &mdash; power-optimised revision</span><span class="when">In progress</span></div>
+      <div class="lrow done"><span class="st done">&#10003;</span><span class="what">Gen&nbsp;2 &middot; Committed to tape-out &mdash; connectivity and perception on one die</span><span class="when">JUL 2026</span></div>
+      <div class="lrow"><span class="st next">&#9675;</span><span class="what">Gen&nbsp;2 &middot; Evaluation kits and silicon sampling in OEM labs</span><span class="when">H2 2027</span></div>
+      <div class="lrow"><span class="st next">&#9675;</span><span class="what">Gen&nbsp;3 &middot; Radio integrated on-die</span><span class="when">2028 &rarr;</span></div>
+    </div>
+    <p class="legend"><b>&#10003;</b> complete &nbsp;&nbsp; <b>&#9679;</b> in progress &nbsp;&nbsp; <b>&#9675;</b> committed</p>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <div class="f-brand"><img src="assets/logo-wordmark.png" alt="Ananant Systems" width="380" height="87"></div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/use-cases">Use Cases</a></li>
+        <li><a href="/company">Company</a></li>
+        <li><a href="/careers">Careers</a></li>
+        <li><a href="/company#contact">Talk to us</a></li>
+      </ul>
+    </div>
+    <div class="f-bottom">&copy; 2026 ANANANT SYSTEMS PRIVATE LIMITED &nbsp;&middot;&nbsp; NOIDA &middot; BENGALURU &middot; SAN DIEGO</div>
+  </div>
+</footer>
+<script src="assets/site.js" defer></script>
+</body>
+</html>

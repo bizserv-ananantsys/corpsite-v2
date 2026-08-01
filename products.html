@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Products — DSP, architecture, connectivity and perception | Ananant Systems</title>
+<meta name="description" content="We own our DSP. Two products on one architecture, one instruction set: connectivity silicon in production and perception silicon on the committed Gen 2 roadmap.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://ananantsys.com/products">
+<meta property="og:title" content="Products — DSP, architecture, connectivity and perception | Ananant Systems">
+<meta property="og:description" content="We own our DSP. Two products on one architecture, one instruction set: connectivity silicon in production and perception silicon on the committed Gen 2 roadmap.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ananantsys.com/products">
+<meta property="og:site_name" content="Ananant Systems">
+<meta property="og:image" content="https://ananantsys.com/assets/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#232321">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="80x80" href="assets/favicon-80.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/space-grotesk-latin-700-normal.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-latin-400-normal.woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="/" aria-label="Ananant Systems &mdash; home"><img src="assets/logo-wordmark.png" alt="Ananant Systems" width="320" height="74"></a>
+    <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navmenu">&#9776;</button>
+    <ul id="navmenu">
+      <li><a class="nl active" href="/products" aria-current=&quot;page&quot;>Products</a></li>
+      <li><a class="nl" href="/use-cases">Use Cases</a></li>
+      <li><a class="nl" href="/company">Company</a></li>
+      <li><a class="cta-mini" href="/company#contact">Talk to us</a></li>
+    </ul>
+  </div>
+</header>
+<main id="main">
+<section class="chapter hero">
+  <svg class="arcfield" viewBox="0 0 700 700" aria-hidden="true" focusable="false" preserveAspectRatio="xMaxYMin meet">
+  <path class="g" stroke-width="34" d="M 700 640 A 610 610 0 0 0 90 30"/>
+  <path class="g" stroke-width="30" d="M 700 500 A 470 470 0 0 0 230 30"/>
+  <path class="s" stroke-width="16" d="M 700 372 A 342 342 0 0 0 358 30" opacity=".9"/>
+  <path class="g" stroke-width="24" d="M 700 260 A 230 230 0 0 0 470 30"/>
+  <path class="g" stroke-width="18" d="M 700 168 A 138 138 0 0 0 562 30"/>
+</svg>
+  <div class="wrap">
+    <p class="hero-tags"><b>PRODUCTS</b></p>
+    <h1>Connectivity and<br>perception silicon on<br>one architecture.</h1>
+    <p class="lede">We design our own DSP. Both products are built from it, using one instruction set and one toolchain across generations.</p>
+  </div>
+</section>
+
+<nav class="subnav" aria-label="Sections on this page">
+  <div class="wrap">
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#dsp">The DSP</a></li>
+      <li><a href="#architecture">Architecture</a></li>
+      <li><a href="#generations">Generations</a></li>
+      <li><a href="#connectivity">Connectivity</a></li>
+      <li><a href="#perception">Perception</a></li>
+      <li><a href="#platform">Systems &amp; Platform</a></li>
+      <li><a href="#roadmap">Product journey</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="chapter" id="overview">
+  <div class="wrap">
+    <p class="kicker rv"><span class="n">00</span>Overview</p>
+    <h2 class="rv">How the products fit together.</h2>
+    <p class="lede rv">Everything on this page sits on one foundation. The DSP we design carries the compute unit; the compute unit carries the software platform; the platform carries both products. Each generation integrates more of the system onto the die without changing the layers above it. Select any band to jump to that section.</p>
+    <div class="stack">
+      <div class="stackrow">
+        <span class="sl">Applications</span>
+        <span class="stackband ext"><b>Built by partners</b><span>Maintenance, inspection, orchestration and safety analytics, on our SDK. We do not build applications.</span></span>
+      </div>
+      <div class="stackrow">
+        <span class="sl">Products</span>
+        <div class="stacksplit">
+          <a class="stackband" href="#connectivity"><b>Connectivity</b><span>5G small cells. In production.</span></a>
+          <a class="stackband" href="#perception"><b>Perception</b><span>Perception co-processor. Gen&nbsp;2.</span></a>
+        </div>
+      </div>
+      <div class="stackrow">
+        <span class="sl">Platform</span>
+        <a class="stackband" href="#platform"><b>Software platform</b><span>SDK and toolchain, deterministic runtime, model library, reference designs, certification kits. Shared by both products.</span></a>
+      </div>
+      <div class="stackrow">
+        <span class="sl">Architecture</span>
+        <a class="stackband" href="#architecture"><b>Compute unit</b><span>RISC-V control plane, data plane co-processor, domain-specific instructions. One instruction stream, one shared memory, one scheduler.</span></a>
+      </div>
+      <div class="stackrow">
+        <span class="sl">Foundation</span>
+        <a class="stackband base" href="#dsp"><b>Our DSP</b><span>Designed in-house. Everything above is composed from it.</span></a>
+      </div>
+      <div class="genaxis">
+        <span><b>Gen 1 &middot; in production</b>Connectivity</span>
+        <span><b>Gen 2 &middot; H2 2027</b>Connectivity and perception, one die</span>
+        <span><b>Gen 3 &middot; 2028 &rarr;</b>Radio integrated</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chapter warm" id="dsp">
+  <div class="wrap">
+    <p class="kicker rv"><span class="n">01</span>Foundation &middot; the DSP</p>
+    <h2 class="rv">We design our own DSP.</h2>
+    <p class="lede rv">Most edge silicon licenses a signal-processing core and differentiates around it. Ours is our own design, which means the instruction set can be extended into the signal domains our customers work in, and the performance, power and cost curve is under our control rather than a supplier&rsquo;s release schedule.</p>
+    <div class="deliv rv">
+      <div><b>Designed in-house</b><p>The data plane co-processor is our own architecture rather than a licensed core with surrounding logic.</p></div>
+      <div><b>Extensible</b><p>Native instructions for the signal domains, added through the standard RISC-V extension mechanism.</p></div>
+      <div><b>Validated</b><p>Validated on FPGA, integrated with commercial L2/L3 stacks, demonstrated at MWC and IMC, and now in production silicon.</p></div>
+    </div>
+    <div class="chips rv">
+      <span class="chip"><b>MIMO</b> demodulation</span>
+      <span class="chip"><b>FEC</b> Turbo &middot; LDPC &middot; Polar</span>
+      <span class="chip"><b>FFT / DCT</b> native</span>
+      <span class="chip"><b>MatMul / MAC</b> native</span>
+      <span class="chip"><b>sigmoid / tanh</b> direct</span>
+    </div>
+    <p class="lede rv mt-30">Our MIMO detection is proprietary and ships as firmware, so radio performance in a deployed fleet can be improved after installation.</p>
+    <div class="figblock rv">
+      <div class="figpanels">
+        <div class="figpanel">
+          <p class="fplabel">Linear detector</p>
+          <p class="fptitle">Sub-optimal</p>
+          <div class="figplot"><img src="assets/data/plot-received.png" alt="64-QAM constellation after a sub-optimal linear detector, symbols spread widely around the reference points" width="780" height="858" loading="lazy"></div>
+        </div>
+        <div class="figpanel after">
+          <p class="fplabel">Our detector</p>
+          <p class="fptitle">Near-optimal</p>
+          <div class="figplot"><img src="assets/data/plot-detected.png" alt="The same constellation after our near-optimal detector, symbols resolved into tight clusters at the reference points" width="780" height="858" loading="lazy"></div>
+        </div>
+      </div>
+      <div class="figwide">
+        <p class="fplabel">Link performance</p>
+        <p class="fptitle">Cumulative throughput</p>
+        <div class="figchart">
+          <span class="yax">Throughput, per cent of peak</span>
+          <div class="figplot wide"><img src="assets/data/plot-throughput.png" alt="Cumulative throughput settling above 98 per cent of peak as slots accumulate" width="1396" height="791" loading="lazy"></div>
+        </div>
+        <p class="xax">Number of slots</p>
+      </div>
+      <div class="figcap">
+        <span class="fcond"><b>FPGA measurement</b> &nbsp;&middot;&nbsp; 64-QAM &nbsp;&middot;&nbsp; 2 layers &nbsp;&middot;&nbsp; SNR 21.7 dB</span>
+        <p>The same received symbols after a sub-optimal linear detector and after our near-optimal detector, with the cumulative throughput measured over the same run. Saffron marks the 64 reference constellation points.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chapter" id="architecture">
+  <div class="wrap">
+    <p class="kicker rv"><span class="n">02</span>Architecture &middot; the compute unit</p>
+    <h2 class="rv">One instruction stream, one shared memory, one scheduler.</h2>
+    <p class="lede rv">Signal processing and AI inference are pipelined on the same die under a single scheduler, without a mode switch or accelerator hand-off. The compute unit has three blocks; select one for detail.</p>
+    <div class="archdiag rv">
+      <p class="spinebar">One instruction stream &rarr;</p>
+      <div class="archgrid">
+        <div>
+        <button class="blk" type="button" data-k="scalar" aria-pressed="false">RISC-V scalar core<small>Control plane</small></button>
+        <button class="blk" type="button" data-k="dpcp" aria-pressed="false">Data plane co-processor<small>Our DSP</small></button>
+        <button class="blk domain" type="button" data-k="domain" aria-pressed="false">Domain-specific instructions<small>Proprietary extensions</small></button>
+        </div>
+        <div class="vcp">
+          <p class="vcphead">Composed into one unit</p>
+          <div class="vrfbar">SHARED MEMORY &middot; ONE SCHEDULER</div>
+          <p class="small m-0">Every execution unit is fed from the same memory under the same scheduler. Signal-processing results pass into inference without leaving the die and without a copy, which is the source of the bounded response time.</p>
+        </div>
+      </div>
+      <div class="archinfo">
+      <div class="blkdetail" data-k="scalar"><h3>RISC-V scalar core</h3><p>A RISC-V core sequences the unit: scalar work, control flow and issue into the data plane. The base is standard RISC-V, so standard compilers, debuggers and profilers apply without modification.</p><p class="mono-tags">STANDARD RISC-V &middot; STANDARD TOOLCHAIN &middot; ONE SCHEDULER</p></div>
+      <div class="blkdetail" data-k="dpcp"><h3>Data plane co-processor</h3><p>The DSP we design. It executes real and complex signal math and low-precision inference on the same pipelines under one scheduler, which removes the mode switch and accelerator hand-off that introduce timing variance in conventional stacks.</p><p class="mono-tags">ONE DATAPATH &middot; SIGNAL MATH AND INFERENCE</p></div>
+      <div class="blkdetail" data-k="domain"><h3>Domain-specific instructions</h3><p>Native instructions for the signal domains, added to the data plane co-processor through the standard RISC-V extension mechanism. Standard base with proprietary extensions covering 5G and 6G, camera, video, radar and LIDAR.</p><p class="mono-tags">5G/6G &middot; CAMERA &middot; VIDEO &middot; RADAR &middot; LIDAR</p></div>
+      </div>
+    </div>
+
+    <h2 class="rv mt-80">Scaling by composition.</h2>
+    <p class="lede rv">The same verified unit composes into larger configurations, so one verification investment applies across the catalogue &mdash; from sensor-class devices to node-class systems.</p>
+    <div class="compgrid rv">
+      <div class="compstep"><span class="cn">01</span><svg viewBox="0 0 100 100" role="img" aria-label="One block containing three internal elements, the middle one highlighted" focusable="false"><rect class="cg-o" x="17" y="17" width="66" height="66" rx="9"/><rect class="cg-f" x="28" y="31" width="44" height="9" rx="2.5"/><rect class="cg-a" x="28" y="45.5" width="44" height="9" rx="2.5"/><rect class="cg-f" x="28" y="60" width="44" height="9" rx="2.5"/></svg><b>Unit</b><p>One scalar core, one data plane, one set of domain instructions. Verified once.</p></div>
+      <div class="compstep"><span class="cn">02</span><svg viewBox="0 0 100 100" role="img" aria-label="Four blocks over a shared memory bar" focusable="false"><rect class="cg-i" x="15" y="12" width="32" height="32" rx="5"/><rect class="cg-i" x="53" y="12" width="32" height="32" rx="5"/><rect class="cg-i" x="15" y="48" width="32" height="32" rx="5"/><rect class="cg-i" x="53" y="48" width="32" height="32" rx="5"/><rect class="cg-f" x="22" y="24" width="18" height="4" rx="2"/><rect class="cg-f" x="60" y="24" width="18" height="4" rx="2"/><rect class="cg-f" x="22" y="60" width="18" height="4" rx="2"/><rect class="cg-f" x="60" y="60" width="18" height="4" rx="2"/><rect class="cg-a" x="15" y="85" width="70" height="6" rx="3"/></svg><b>Cluster</b><p>Units over shared local memory, so workloads that exchange data stay on-die.</p></div>
+      <div class="compstep"><span class="cn">03</span><svg viewBox="0 0 100 100" role="img" aria-label="Four blocks linked by a central network" focusable="false"><rect class="cg-i" x="12" y="12" width="30" height="30" rx="4"/><rect class="cg-i" x="58" y="12" width="30" height="30" rx="4"/><rect class="cg-i" x="12" y="58" width="30" height="30" rx="4"/><rect class="cg-i" x="58" y="58" width="30" height="30" rx="4"/><rect class="cg-f" x="18" y="33" width="18" height="3.5" rx="1.75"/><rect class="cg-f" x="64" y="33" width="18" height="3.5" rx="1.75"/><rect class="cg-f" x="18" y="79" width="18" height="3.5" rx="1.75"/><rect class="cg-f" x="64" y="79" width="18" height="3.5" rx="1.75"/><path class="cg-al" d="M42 27 H58 M42 73 H58 M27 42 V58 M73 42 V58"/><rect class="cg-al" x="43" y="43" width="14" height="14" rx="3"/></svg><b>Tile</b><p>Clusters on a network-on-chip. The repeatable performance block.</p></div>
+      <div class="compstep"><span class="cn">04</span><svg viewBox="0 0 100 100" role="img" aria-label="Two blocks joined by die-to-die links" focusable="false"><rect class="cg-o" x="8" y="24" width="36" height="52" rx="6"/><rect class="cg-o" x="56" y="24" width="36" height="52" rx="6"/><rect class="cg-i" x="15" y="32" width="10.5" height="10.5" rx="2"/><rect class="cg-i" x="26.5" y="32" width="10.5" height="10.5" rx="2"/><rect class="cg-i" x="15" y="44" width="10.5" height="10.5" rx="2"/><rect class="cg-i" x="26.5" y="44" width="10.5" height="10.5" rx="2"/><rect class="cg-i" x="63" y="32" width="10.5" height="10.5" rx="2"/><rect class="cg-i" x="74.5" y="32" width="10.5" height="10.5" rx="2"/><rect class="cg-i" x="63" y="44" width="10.5" height="10.5" rx="2"/><rect class="cg-i" x="74.5" y="44" width="10.5" height="10.5" rx="2"/><path class="cg-al2" d="M44 38 H56 M44 50 H56 M44 62 H56"/><rect class="cg-a" x="40" y="34" width="4" height="32" rx="2"/><rect class="cg-a" x="56" y="34" width="4" height="32" rx="2"/></svg><b>Chiplet</b><p>Tiles with coherent interconnect and die-to-die links.</p></div>
+      <div class="compstep"><span class="cn">05</span><svg viewBox="0 0 100 100" role="img" aria-label="One die containing four blocks, with I/O around the perimeter" focusable="false"><rect class="cg-o" x="14" y="14" width="72" height="72" rx="9"/><rect class="cg-i" x="24" y="24" width="24" height="24" rx="3"/><rect class="cg-i" x="52" y="24" width="24" height="24" rx="3"/><rect class="cg-i" x="24" y="52" width="24" height="24" rx="3"/><rect class="cg-i" x="52" y="52" width="24" height="24" rx="3"/><rect class="cg-a" x="26" y="7" width="12" height="5" rx="2"/><rect class="cg-a" x="45" y="7" width="12" height="5" rx="2"/><rect class="cg-a" x="64" y="7" width="12" height="5" rx="2"/><rect class="cg-a" x="26" y="88" width="12" height="5" rx="2"/><rect class="cg-a" x="45" y="88" width="12" height="5" rx="2"/><rect class="cg-a" x="64" y="88" width="12" height="5" rx="2"/><rect class="cg-a" x="7" y="30" width="5" height="12" rx="2"/><rect class="cg-a" x="7" y="58" width="5" height="12" rx="2"/><rect class="cg-a" x="88" y="30" width="5" height="12" rx="2"/><rect class="cg-a" x="88" y="58" width="5" height="12" rx="2"/></svg><b>SoC</b><p>Chiplets with Ethernet, PCIe and DDR. Radio included only where required.</p></div>
+    </div>
+    <div class="compscale"><span><b>~10 mW</b> SENSOR-CLASS</span><span>NODE-CLASS <b>~10 W</b></span></div>
+  </div>
+</section>
+
+<section class="chapter warm" id="generations">
+  <div class="wrap">
+    <p class="kicker rv"><span class="n">03</span>Generations</p>
+    <h2 class="rv">Multiple generations on one architecture.</h2>
+    <p class="lede rv">Each generation integrates more of the system onto the die. The underlying architecture does not change, so software written for the first generation runs on the third and a design-in made today carries forward.</p>
+    <div class="gens">
+      <div class="gen rv">
+        <div class="gid">Gen&nbsp;1<span class="gst">In production</span></div>
+        <div><h3>Connectivity</h3><p>5G small cell silicon. We supply the chip, the L1 software carrying our MIMO detection, and the complete femto system. v1 is in production and available to customers. A v2 revision is in progress, targeting further power reduction on the same product.</p></div>
+        <div class="gwhen">Available now</div>
+      </div>
+      <div class="gen rv">
+        <div class="gid">Gen&nbsp;2<span class="gst">Specifications available</span></div>
+        <div><h3>Connectivity and perception on one die</h3><p>One silicon design serving two products: the femto part and the perception SoC. Same compute unit, same instruction set and same toolchain across both. Specifications and interface detail are in the product briefs.</p></div>
+        <div class="gwhen">EVKs and sampling H2 2027</div>
+      </div>
+      <div class="gen rv">
+        <div class="gid">Gen&nbsp;3<span class="gst">In architecture</span></div>
+        <div><h3>Radio integrated on-die</h3><p>Radio integration moves the last discrete component of the system onto the SoC. The two products remain connectivity and perception.</p></div>
+        <div class="gwhen">2028 &rarr;</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="chapter" id="connectivity">
+  <div class="wrap">
+    <p class="kicker rv"><span class="n">04</span>Product &middot; connectivity</p>
+    <div class="prodhead rv"><h2>Connectivity</h2><span class="status live">In production</span></div>
+    <p class="lede rv">5G small cells for operator networks and private industrial networks. In production now, at lower power and cost than incumbent multi-chip platforms, with radio performance delivered as firmware.</p>
+    <div class="deliv rv">
+      <div><b>What we supply &mdash; 01</b><p>The chip. Deterministic 5G silicon, in production and available to customers.</p></div>
+      <div><b>What we supply &mdash; 02</b><p>The L1 software, carrying our proprietary MIMO detection as firmware.</p></div>
+      <div><b>What we supply &mdash; 03</b><p>The complete femto system, at a level an operator can accept and deploy.</p></div>
+    </div>
+    <table class="spec">
+      <tbody>
+      <tr><th scope="row">Function</th><td>5G NR small-cell platform for operator networks, private 5G and industrial networks</td></tr>
+      <tr><th scope="row">Radio performance</th><td>Proprietary MIMO detection delivered as firmware; performance can be improved after deployment</td></tr>
+      <tr><th scope="row">Stack integration</th><td>Validated against commercial L2/L3 stacks</td></tr>
+      <tr><th scope="row">System power</th><td>More than <span class="m">50%</span> lower than incumbent multi-chip platforms, from architecture rather than process node</td></tr>
+      <tr><th scope="row">Status</th><td>In production, available to customers, designed and supported in-country</td></tr>
+      <tr><th scope="row">Lifecycle</th><td>15-year industrial supply and support commitment</td></tr>
+      <tr><th scope="row">Roadmap</th><td>Committed integration path onto Gen&nbsp;2; the software platform is unchanged across generations</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="chapter warm" id="perception">
+  <div class="wrap">
+    <p class="kicker rv"><span class="n">04</span>Product &middot; perception</p>
+    <div class="prodhead rv"><h2>Perception</h2><span class="status">Gen&nbsp;2 &middot; EVKs and sampling H2 2027</span></div>
+    <p class="lede rv">A deterministic perception co-processor for smart cameras, mobile robots and industrial vision. It handles the perception pipeline in bounded time at camera-class cost and power, alongside the application processor rather than replacing it.</p>
+    <div class="deliv rv">
+      <div><b>What we supply &mdash; 01</b><p>The chip. Perception and connectivity from the same silicon design and instruction set.</p></div>
+      <div><b>What we supply &mdash; 02</b><p>The compiler and toolchain, on a standard RISC-V base.</p></div>
+      <div><b>What we supply &mdash; 03</b><p>The software platform: runtime, pre-optimised model library and reference designs, tuned for latency, cost and power.</p></div>
+    </div>
+    <table class="spec">
+      <tbody>
+      <tr><th scope="row">Function</th><td>Perception pipeline and edge-AI inference on one die, ahead of the application processor</td></tr>
+      <tr><th scope="row">On-die</th><td>Sensor I/O &middot; image-signal processing &middot; safety island &middot; perception inference</td></tr>
+      <tr><th scope="row">Functional safety</th><td>Safety island designed on an IEC 61508 / ISO 13849 certification path</td></tr>
+      <tr><th scope="row">Software</th><td>Ships with a pre-optimised model library, reducing time to first working inference</td></tr>
+      <tr><th scope="row">Optimisation target</th><td>Latency, cost and power together, which are the binding constraints in volume machine sockets</td></tr>
+      <tr><th scope="row">Architecture</th><td>Same instruction set, toolchain and firmware as the rest of the family</td></tr>
+      <tr><th scope="row">Availability</th><td>Evaluation kits and silicon sampling in OEM labs <span class="m">H2 2027</span></td></tr>
+      <tr><th scope="row">Lifecycle</th><td>15-year industrial supply and support commitment</td></tr>
+      <tr><th scope="row">Specifications</th><td>Full roadmap, specifications and interface detail are provided in the product brief</td></tr>
+      </tbody>
+    </table>
+    <p class="mt-32"><a class="btn solid" href="/company#contact">Join the EVK programme</a></p>
+  </div>
+</section>
+
+<section class="chapter" id="platform">
+  <div class="wrap">
+    <p class="kicker rv"><span class="n">05</span>Platform</p>
+    <h2 class="rv">Four layers.</h2>
+    <p class="lede rv">We build the compute unit, the software platform and the products. Applications are built by partners on top.</p>
+    <div class="layers rv">
+      <button class="layer" type="button" data-l="4" aria-expanded="false" aria-controls="lb-4">
+        <span class="ln">LAYER 4</span><span class="lt">Applications, built by partners</span><span class="lx" aria-hidden="true">+</span>
+      </button>
+      <div class="layerbody" id="lb-4"><p>Maintenance, quality inspection, fleet orchestration and safety analytics, built by software vendors and integrators on our SDK. We do not build applications.</p></div>
+      <button class="layer" type="button" data-l="3" aria-expanded="false" aria-controls="lb-3">
+        <span class="ln">LAYER 3</span><span class="lt">Two products, plus the partner route</span><span class="lx" aria-hidden="true">+</span>
+      </button>
+      <div class="layerbody" id="lb-3"><p>Connectivity and perception, and subsystems supplied into partner macro systems. From Gen&nbsp;2 both products come from one silicon design.</p></div>
+      <button class="layer" type="button" data-l="2" aria-expanded="false" aria-controls="lb-2">
+        <span class="ln">LAYER 2</span><span class="lt">Software platform</span><span class="lx" aria-hidden="true">+</span>
+      </button>
+      <div class="layerbody" id="lb-2"><p>SDK and toolchain, firmware and deterministic runtime with over-the-air update, pre-optimised model library, reference designs and certification kits. This reduces the engineering cost of each subsequent design-in.</p></div>
+      <button class="layer" type="button" data-l="1" aria-expanded="false" aria-controls="lb-1">
+        <span class="ln">LAYER 1</span><span class="lt">One compute unit, one instruction set</span><span class="lx" aria-hidden="true">+</span>
+      </button>
+      <div class="layerbody" id="lb-1"><p>RISC-V control plane, our DSP data plane and domain-specific instructions, verified once and composed into every product.</p></div>
+    </div>
+    <h2 class="rv mt-70">What ships with the silicon.</h2>
+    <div class="deliv rv">
+      <div><b>Tools</b><p>SDK and toolchain on a standard RISC-V base &mdash; compilers, debuggers and profilers.</p></div>
+      <div><b>Runtime</b><p>Deterministic firmware and runtime with over-the-air update, so deployed systems can be improved in the field.</p></div>
+      <div><b>Models</b><p>Pre-optimised model library, reference designs and certification kits.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="chapter warm" id="roadmap">
+  <div class="wrap">
+    <p class="kicker rv"><span class="n">06</span>Product journey</p>
+    <h2 class="rv">Product journey: so far, and into the future.</h2>
+    <p class="lede rv">Technology and product milestones only. Programme and commercial milestones are on the <a href="/company#history" class="ulink">company history</a> page.</p>
+    <div class="rmap">
+      <div class="rmap-axis" aria-hidden="true">
+        <span class="rmap-axis-pad"></span>
+      <span>2023&ndash;25</span>
+      <span>2026</span>
+      <span>2027</span>
+      <span>2028 &rarr;</span>
+      </div>
+      <div class="rmap-row">
+        <div class="rmap-gen">Gen&nbsp;1<span>Connectivity</span></div>
+        <div class="rmap-track">
+        <div class="rmap-ms done c1"><span class="ms-when">&#10003; 2023&ndash;25</span><span class="ms-what">FPGA validation, integrated with commercial L2/L3 stacks</span></div>
+        <div class="rmap-ms done c2"><span class="ms-when">&#10003; 2026</span><span class="ms-what">v1 silicon in production</span></div>
+        <div class="rmap-ms prog c3"><span class="ms-when">&#9679; In progress</span><span class="ms-what">v2 &mdash; power-optimised revision</span></div>
+        </div>
+      </div>
+      <div class="rmap-row">
+        <div class="rmap-gen">Gen&nbsp;2<span>Connectivity + perception</span></div>
+        <div class="rmap-track">
+        <div class="rmap-ms done c2"><span class="ms-when">&#10003; JUL 2026</span><span class="ms-what">Committed to tape-out &mdash; connectivity and perception on one die</span></div>
+        <div class="rmap-ms next c3"><span class="ms-when">&#9675; H2 2027</span><span class="ms-what">Evaluation kits and silicon sampling in OEM labs</span></div>
+        </div>
+      </div>
+      <div class="rmap-row">
+        <div class="rmap-gen">Gen&nbsp;3<span>Radio integrated</span></div>
+        <div class="rmap-track">
+        <div class="rmap-ms next c4"><span class="ms-when">&#9675; 2028 &rarr;</span><span class="ms-what">Radio integrated on-die</span></div>
+        </div>
+      </div>
+    </div>
+    <p class="legend light"><b>&#10003;</b> complete &nbsp;&nbsp; <b>&#9679;</b> in progress &nbsp;&nbsp; <b>&#9675;</b> committed</p>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <div class="f-brand"><img src="assets/logo-wordmark.png" alt="Ananant Systems" width="380" height="87"></div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/use-cases">Use Cases</a></li>
+        <li><a href="/company">Company</a></li>
+        <li><a href="/careers">Careers</a></li>
+        <li><a href="/company#contact">Talk to us</a></li>
+      </ul>
+    </div>
+    <div class="f-bottom">&copy; 2026 ANANANT SYSTEMS PRIVATE LIMITED &nbsp;&middot;&nbsp; NOIDA &middot; BENGALURU &middot; SAN DIEGO</div>
+  </div>
+</footer>
+<script src="assets/site.js" defer></script>
+</body>
+</html>
