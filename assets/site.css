@@ -839,3 +839,6 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 .rmap-ms.c3{grid-column:3}
 .rmap-ms.c4{grid-column:4}
 .rmap-ms.c5{grid-column:5}
+
+.alnk{font-size:13px;text-decoration:none;color:var(--mut);margin-left:4px}
+.alnk:hover{color:var(--sig)}
